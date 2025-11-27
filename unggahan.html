@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unggahanmu - Rasana.id</title>
+
+  <!-- FONT + ICON -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="unggahan.css">
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="logo">
+      <img src="asset/logo2.png" alt="logo">
+    </div>
+
+    <div class="side-menu">
+      <a href="search.html"><i class="ri-global-line"></i></a>
+      <a href="home.html"><i class="ri-home-4-line"></i></a>
+      <a href="posting.html"><i class="ri-add-line"></i></a>
+      <a href="map.html"><i class="ri-map-pin-line"></i></a>
+      <a href="notification.html"><i class="ri-notification-3-line"></i></a>
+      <a href="profilesetting.html"><i class="ri-settings-3-line"></i></a>
+    </div>
+
+    <div class="profile">
+      <a href="profilesetting.html">
+        <img src="asset/Ellipse 11.png" alt="Alexa Rawles">
+      </a>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-left">
+        <span class="header-greeting">Unggahanmu</span>
+        <span class="header-date">Selasa, 07 Juni 2025</span>
+      </div>
+      <div class="header-right">
+        <!-- langsung logout tanpa popup -->
+        <button class="header-button" onclick="window.location.href='login.html'">
+          <i class="fas fa-sign-out-alt"></i> Keluar
+        </button>
+        <button class="header-button">
+          <i class="fas fa-folder-open"></i> Unggahan
+        </button>
+        <div class="header-notification">
+          <i class="fas fa-bell"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- BANNER -->
+    <div class="top-banner"></div>
+
+    <!-- FEED (SATU UNGGAHAN) -->
+    <div class="feed-wrapper">
+      <article class="feed-card">
+        <!-- HEADER POST -->
+        <div class="feed-header">
+          <div class="feed-user">
+            <div class="feed-avatar">
+              <img src="asset/Ellipse 11.png" alt="Alexa Rawles">
+            </div>
+            <div class="feed-user-info">
+              <div class="feed-username">Alexa Rawles</div>
+              <div class="feed-location">
+                <i class="ri-map-pin-line"></i>
+                Lamongan, Jawa Timur
+              </div>
+            </div>
+          </div>
+
+          <div class="feed-header-right">
+            <span class="feed-badge">Review</span>
+            <button class="feed-more">
+              <i class="ri-more-2-fill"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- GAMBAR -->
+        <div class="feed-image">
+          <!-- ganti dengan gambar soto kamu -->
+          <img src="asset/soto-lamongan.jpg" alt="Soto Lamongan">
+        </div>
+
+        <!-- ACTION ICONS -->
+        <div class="feed-actions">
+          <div class="feed-actions-left">
+            <button class="icon-button"><i class="ri-heart-3-line"></i></button>
+            <button class="icon-button"><i class="ri-chat-3-line"></i></button>
+            <button class="icon-button"><i class="ri-share-forward-line"></i></button>
+          </div>
+          <button class="icon-button">
+            <i class="ri-bookmark-line"></i>
+          </button>
+        </div>
+
+        <!-- CAPTION & META -->
+        <div class="feed-meta">
+          <div class="feed-likes">1,500 likes</div>
+          <p class="feed-caption">
+            Soto Lamongan ini rasanya mantap, kuahnya gurih dan ringan dengan aroma rempah yang nampol.
+            Ditambah topping ayam, telur, dan tomat segar bikin setiap suapan makin kaya rasa dan bikin
+            ketagihan.
+          </p>
+          <button class="feed-comments-link">Lihat semua 300 comments</button>
+          <div class="feed-time">8 jam yang lalu</div>
+        </div>
+      </article>
+    </div>
+
+  </div>
+
+</body>
+</html>
