@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* warna utama disamain dengan tema Rasana */
-  --primary: #F9DA62;          /* kuning aksen utama */
-  --primary-light: #FCE8A3;    /* kuning lebih muda */
-  --primary-dark: #754C24;     /* coklat tua aksen */
-
-  /* background & text mengikuti page kamu */
+  --primary: #F9DA62;         
+  --primary-light: #FCE8A3;    
+  --primary-dark: #754C24;    
   --bg-main: #FFFFFF;
-  --bg-secondary: #F8F4EC;     /* mirip main-background di page profil */
+  --bg-secondary: #F8F4EC;     
   --text-primary: #3F3C3B;
   --text-secondary: #555555;
   --text-muted: #777777;
-
-  /* border dan shadow tetap soft */
   --border: #E0E0E0;
   --success: #00A699;
   --warning: #F9DA62;

@@ -12,11 +12,11 @@
 <body>
 
     <div class="sidebar">
-    <div class="logo"><img src="asset/logo2.png" alt="logo"></div>
+    <div class="logo"><a href="dashboard admin.html"><img src="asset/logo2.png" alt="logo"></a></div>
 
     <div class="side-menu">
         <a href="search.html"><i class="ri-global-line"></i></a>
-        <a href="home.html"><i class="ri-home-4-line"></i></a>
+        <a href="home-page.html"><i class="ri-home-4-line"></i></a>
         <a href="posting.html"><i class="ri-add-line"></i></a>
         <a href="map.html"><i class="ri-map-pin-line"></i></a>
         <a href="notification.html"><i class="ri-notification-3-line"></i></a>
@@ -26,7 +26,7 @@
 
     <div class="profile">
         <a href="profilesetting.html">
-            <img src="asset/Ellipse 11.png"Alexa Rawles">
+            <img src="asset/Ellipse 11.png" alt="Alexa Rawles">
         </a>
     </div>
 </div>
@@ -42,10 +42,10 @@
         <button class="header-button logout-button">
           <i class="fas fa-sign-out-alt"></i> Keluar
         </button>
-        <button class="header-button">
+        <a href="unggahan.html"><button class="header-button">
           <i class="fas fa-folder-open"></i> Unggahan
-        </button>
-        <div class="header-notification"><i class="fas fa-bell"></i></div>
+        </button></a>
+        <a href="notification.html"><div class="header-notification"><i class="fas fa-bell"></i></div></a>
       </div>
     </div>
 
@@ -156,7 +156,7 @@
 
     // tombol Ya diarahkan ke halaman lain (logout beneran)
     yesBtn.addEventListener('click', function () {
-      // anak smk: ganti 'login.html' sesuai halaman tujuan logout
+      // ganti 'login.html' sesuai halaman tujuan logout
       window.location.href = 'login.html';
     });
   </script>

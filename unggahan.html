@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Unggahanmu - Rasana.id</title>
 
-  <!-- FONT + ICON -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="unggahan.css">
 </head>
 <body>
@@ -18,12 +16,12 @@
   <!-- SIDEBAR -->
   <div class="sidebar">
     <div class="logo">
-      <img src="asset/logo2.png" alt="logo">
+      <a href="dashboard admin.html"><img src="asset/logo2.png" alt="logo"></a>
     </div>
 
     <div class="side-menu">
       <a href="search.html"><i class="ri-global-line"></i></a>
-      <a href="home.html"><i class="ri-home-4-line"></i></a>
+      <a href="home-page.html"><i class="ri-home-4-line"></i></a>
       <a href="posting.html"><i class="ri-add-line"></i></a>
       <a href="map.html"><i class="ri-map-pin-line"></i></a>
       <a href="notification.html"><i class="ri-notification-3-line"></i></a>
@@ -32,96 +30,206 @@
 
     <div class="profile">
       <a href="profilesetting.html">
-        <img src="asset/Ellipse 11.png" alt="Alexa Rawles">
+        <img src="asset/Ellipse 11.png" alt="profil">
       </a>
     </div>
   </div>
 
-  <!-- MAIN CONTENT -->
   <div class="main-content">
-
-    <!-- HEADER -->
     <div class="header">
       <div class="header-left">
         <span class="header-greeting">Unggahanmu</span>
         <span class="header-date">Selasa, 07 Juni 2025</span>
       </div>
       <div class="header-right">
-        <!-- langsung logout tanpa popup -->
-        <button class="header-button" onclick="window.location.href='login.html'">
+        <!-- nambah class logout-button buat diambil JS -->
+        <button class="header-button logout-button">
           <i class="fas fa-sign-out-alt"></i> Keluar
         </button>
-        <button class="header-button">
+        <a href="unggahan.html"><button class="header-button">
           <i class="fas fa-folder-open"></i> Unggahan
-        </button>
-        <div class="header-notification">
-          <i class="fas fa-bell"></i>
-        </div>
+        </button></a>
+        <a href="notification.html"><div class="header-notification"><i class="fas fa-bell"></i></div></a>
       </div>
     </div>
 
     <!-- BANNER -->
     <div class="top-banner"></div>
 
-    <!-- FEED (SATU UNGGAHAN) -->
-    <div class="feed-wrapper">
-      <article class="feed-card">
-        <!-- HEADER POST -->
-        <div class="feed-header">
-          <div class="feed-user">
-            <div class="feed-avatar">
-              <img src="asset/Ellipse 11.png" alt="Alexa Rawles">
-            </div>
-            <div class="feed-user-info">
-              <div class="feed-username">Alexa Rawles</div>
-              <div class="feed-location">
-                <i class="ri-map-pin-line"></i>
-                Lamongan, Jawa Timur
-              </div>
-            </div>
-          </div>
+    <!-- CARD BARU (DARI SEARCH) -->
+    <div class="cards">
 
-          <div class="feed-header-right">
-            <span class="feed-badge">Review</span>
-            <button class="feed-more">
-              <i class="ri-more-2-fill"></i>
-            </button>
+      <div class="card">
+        <div class="card-header">
+          <img src="asset/Ellipse 11.png" alt="Alexa Rawles">
+          <div>
+            <h4>Alexa Rawles</h4>
+            <p>Lamongan, Jawa Timur</p>
           </div>
+          <span class="tag">Review</span>
         </div>
 
-        <!-- GAMBAR -->
-        <div class="feed-image">
-          <!-- ganti dengan gambar soto kamu -->
-          <img src="asset/soto-lamongan.jpg" alt="Soto Lamongan">
+        <img class="card-img" src="asset/Soto Lamongan Sukoharjo.jpg" alt="Soto Lamongan">
+
+        <div class="card-icon">
+          <i class="ri-heart-line"></i>
+          <i class="ri-chat-1-line"></i>
+          <i class="ri-share-forward-line"></i>
         </div>
 
-        <!-- ACTION ICONS -->
-        <div class="feed-actions">
-          <div class="feed-actions-left">
-            <button class="icon-button"><i class="ri-heart-3-line"></i></button>
-            <button class="icon-button"><i class="ri-chat-3-line"></i></button>
-            <button class="icon-button"><i class="ri-share-forward-line"></i></button>
-          </div>
-          <button class="icon-button">
-            <i class="ri-bookmark-line"></i>
-          </button>
-        </div>
+        <div class="card-body">
+          <p class="likes">1,500 likes</p>
 
-        <!-- CAPTION & META -->
-        <div class="feed-meta">
-          <div class="feed-likes">1,500 likes</div>
-          <p class="feed-caption">
+          <p>
             Soto Lamongan ini rasanya mantap, kuahnya gurih dan ringan dengan aroma rempah yang nampol.
             Ditambah topping ayam, telur, dan tomat segar bikin setiap suapan makin kaya rasa dan bikin
             ketagihan.
           </p>
-          <button class="feed-comments-link">Lihat semua 300 comments</button>
-          <div class="feed-time">8 jam yang lalu</div>
-        </div>
-      </article>
-    </div>
 
+          <p class="meta">Lihat semua 300 comments</p>
+
+          <!-- KOMENTAR -->
+          <div class="comment-box">
+            <div class="comment-header-row">
+              <span class="comment-title">Komentar</span>
+            </div>
+
+            <div class="comment-list"></div>
+
+            <div class="comment-form">
+              <img src="asset/Ellipse 11.png" class="comment-avatar-img comment-avatar-me" alt="profil">
+              <input type="text" class="comment-input" placeholder="Tulis komentar...">
+              <button type="button" class="comment-send">Kirim</button>
+            </div>
+          </div>
+
+          <div class="time-row">
+            <p class="time">8 jam yang lalu</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
+  <!-- popup konfirmasi logout -->
+  <div class="modal-overlay" id="logoutModal">
+    <div class="modal-box">
+      <!-- tombol X buat nutup popup -->
+      <button class="modal-close">&times;</button>
+      <h3 class="modal-title">Keluar Akun</h3>
+      <p class="modal-text">Apakah Anda yakin ingin keluar?</p>
+      <div class="modal-actions">
+        <!-- tombol ya dan tidak -->
+        <button class="modal-btn modal-yes">Ya</button>
+        <button class="modal-btn modal-no">Tidak</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- script simple buat handle popup -->
+  <script>
+    // ambil elemen yang dipakai
+    const logoutBtn = document.querySelector('.logout-button'); // tombol keluar
+    const logoutModal = document.getElementById('logoutModal'); // popup
+    const closeBtn = document.querySelector('.modal-close'); // tombol X
+    const noBtn = document.querySelector('.modal-no'); // tombol tidak
+    const yesBtn = document.querySelector('.modal-yes'); // tombol ya
+
+    // fungsi buat buka popup
+    logoutBtn.addEventListener('click', function () {
+      logoutModal.classList.add('show');
+    });
+
+    // fungsi buat nutup popup
+    function closeModal() {
+      logoutModal.classList.remove('show');
+    }
+
+    // tombol X dan Tidak sama-sama nutup popup
+    closeBtn.addEventListener('click', closeModal);
+    noBtn.addEventListener('click', closeModal);
+
+    // kalau klik area gelap di luar box juga nutup
+    logoutModal.addEventListener('click', function (e) {
+      if (e.target === logoutModal) {
+        closeModal();
+      }
+    });
+
+    // tombol Ya diarahkan ke halaman lain (logout beneran)
+    yesBtn.addEventListener('click', function () {
+      // ganti 'login.html' sesuai halaman tujuan logout
+      window.location.href = 'login.html';
+    });
+  </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  // LIKE
+  const likeIcons = document.querySelectorAll('.card-icon .ri-heart-line, .card-icon .ri-heart-fill');
+  likeIcons.forEach(function (icon) {
+    icon.addEventListener('click', function () {
+      const isLiked = this.classList.toggle('liked');
+
+      if (isLiked) {
+        this.classList.remove('ri-heart-line');
+        this.classList.add('ri-heart-fill');
+      } else {
+        this.classList.remove('ri-heart-fill');
+        this.classList.add('ri-heart-line');
+      }
+    });
+  });
+
+  // COMMENT
+  const commentIcons = document.querySelectorAll('.card-icon .ri-chat-1-line');
+  commentIcons.forEach(function (icon) {
+    icon.addEventListener('click', function () {
+      const card = this.closest('.card');
+      const box = card.querySelector('.comment-box');
+
+      if (!box.dataset.init) {
+        const input = box.querySelector('.comment-input');
+        const sendBtn = box.querySelector('.comment-send');
+        const list = box.querySelector('.comment-list');
+
+        function addComment() {
+          const text = input.value.trim();
+          if (!text) return;
+
+          const item = document.createElement('div');
+          item.className = 'comment-item';
+          item.innerHTML = `
+            <img src="asset/Ellipse 11.png" class="comment-avatar-img comment-avatar-me">
+            <div class="comment-bubble">
+              <div class="comment-top">
+                <span class="comment-name">Kamu</span>
+                <span class="comment-date">Baru saja</span>
+              </div>
+              <div class="comment-text">${text}</div>
+            </div>
+          `;
+          list.appendChild(item);
+          input.value = '';
+        }
+
+        sendBtn.addEventListener('click', addComment);
+        input.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            addComment();
+          }
+        });
+
+        box.dataset.init = 'true';
+      }
+
+      box.classList.toggle('show');
+      this.classList.toggle('comment-active');
+    });
+  });
+});
+</script>
 
 </body>
 </html>
